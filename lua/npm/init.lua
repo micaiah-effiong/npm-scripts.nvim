@@ -34,7 +34,7 @@ local function complete_npm_command(lead, _, _)
 end
 
 local function npm_command(cmd)
-  vim.cmd("terminal npm run " .. cmd)
+  vim.cmd("bel terminal npm run " .. cmd)
 end
 
 vim.api.nvim_create_user_command("Npm", function(opts)
